@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/lightbox.min.css">
+    <link rel="stylesheet" href="scss/galeria.css">
+
+    <title>Biuro podróży QuoVadis</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                QuoVadis
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            Strona główna
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria.html" class="nav-link active">
+                            Galeria
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kontakt.html" class="nav-link">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="jumbotron-bg"
+                 style="background: url(https://images.unsplash.com/photo-1590276750605-8c730831941a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80) center center / cover no-repeat;"></div>
+            <div id="ani" style="position: relative">
+                <h1 class="display-4">Witamy w biurze QuoVadis</h1>
+                <p class="lead">Lorem ipsum</p>
+                <p class="lead">Lorem ipsum dolor sit amet</p>
+                <a href="galeria.html" id="jbutton" class="btn btn-lg btn-outline-info">
+                    Zobacz miejsca w które możesz z nami pojechać
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="index.html">Strona główna</a>
+        <div id="1breadcrumb" class="breadcrumb-item active">Galeria</div>
+    </nav>
+    <main>
+        <h1 class="text-center mb-5">Zdjęcia z podróży z naszym biurem</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 fixed"
+                         src="https://images.unsplash.com/photo-1475139977302-d5bd42365d8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80"
+                         alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Zakopane</h5>
+                        <p>Lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 fixed"
+                         src="https://images.unsplash.com/photo-1563627042004-362887667513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80"
+                         alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Kraków</h5>
+                        <p>Lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 fixed"
+                         src="https://images.unsplash.com/photo-1532157345990-d3ab4df99902?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=776&q=80"
+                         alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Wrocław</h5>
+                        <p>Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="card-columns mt-3">
+            <div class="card">
+                <a href="https://images.unsplash.com/photo-1590746490933-7ac6676d9a9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                   data-lightbox="background" >
+                    <img class="galeria"
+                         src="https://images.unsplash.com/photo-1590746490933-7ac6676d9a9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt="...">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://images.unsplash.com/photo-1590694779705-1bf52e6e7df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                   data-lightbox="background" >
+                    <img class="galeria"
+                         src="https://images.unsplash.com/photo-1590694779705-1bf52e6e7df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                         alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://images.unsplash.com/photo-1590691242261-f9f5f0f45a2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+                   data-lightbox="background" >
+                    <img class="galeria"
+                         src="https://images.unsplash.com/photo-1590691242261-f9f5f0f45a2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+                         alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://images.unsplash.com/photo-1590670908865-c3330d76a188?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=673&q=80"
+                   data-lightbox="background" >
+                    <img class="galeria"
+                         src="https://images.unsplash.com/photo-1590670908865-c3330d76a188?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=673&q=80"
+                         alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://images.unsplash.com/photo-1590552958140-01180982f57d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
+                   data-lightbox="background" >
+                    <img class="galeria"
+                         src="https://images.unsplash.com/photo-1590552958140-01180982f57d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
+                         alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://images.unsplash.com/photo-1590559899731-a382839e5549?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                   data-lightbox="background" >
+                    <img class="galeria"
+                         src="https://images.unsplash.com/photo-1590559899731-a382839e5549?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                         alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://images.unsplash.com/photo-1590445046389-050a2a5a6c0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=655&q=80"
+                   data-lightbox="background" >
+                    <img class="galeria"
+                         src="https://images.unsplash.com/photo-1590445046389-050a2a5a6c0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=655&q=80"
+                         alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://images.unsplash.com/photo-1590397025175-8dd27ea82067?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
+                   data-lightbox="background" >
+                    <img class="galeria"
+                         src="https://images.unsplash.com/photo-1590397025175-8dd27ea82067?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
+                         alt="">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://images.unsplash.com/photo-1590680130733-17ec69521088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
+                   data-lightbox="background" >
+                    <img class="galeria"
+                         src="https://images.unsplash.com/photo-1590680130733-17ec69521088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
+                         alt="">
+                </a>
+            </div>
+        </div>
+
+    </main>
+</div>
+<footer class="bg-dark py-4 mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h5>QuoVadis</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque cum dicta dolore et magni
+                    maiores minima nemo nisi non, nostrum quod. Autem dolorem laborum magnam, perspiciatis placeat quam
+                    unde.</p>
+            </div>
+            <div class="col-md-4">
+                <form action="get">
+                    <h5>Newsletter</h5>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="adres e-mail">
+                        <a class="btn btn-primary">
+                            Zapisz się
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="stopka py-2">
+    <p class="text-center m-0">&copy;CP</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="js/przyciski.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

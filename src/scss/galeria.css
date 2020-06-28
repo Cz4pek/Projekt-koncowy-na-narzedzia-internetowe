@@ -1,0 +1,25 @@
+
+.card {
+    margin: 0;
+    min-height: 0px;
+}
+
+.galeria {
+    width: 100%;
+}
+
+.fixed {
+    height: 700px;
+}
+
+@media (max-width: 770px) {
+    .fixed {
+        height: 450px;
+    }
+}
+
+@media (max-width: 576px) {
+    .fixed {
+        height: 300px;
+    }
+}

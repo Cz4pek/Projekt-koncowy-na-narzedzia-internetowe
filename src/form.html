@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="scss/style.css">
+
+    <title>Biuro podróży QuoVadis</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                QuoVadis
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            Strona główna
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria.html" class="nav-link">
+                            Galeria
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kontakt.html" class="nav-link">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="jumbotron-bg"
+                 style="background: url(https://images.unsplash.com/photo-1590520623549-8bf72516bcce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80) center center / cover no-repeat;"></div>
+            <div id="ani" style="position: relative">
+                <h1 class="display-4">Witamy w biurze QuoVadis</h1>
+                <p class="lead">Lorem ipsum</p>
+                <p class="lead">Lorem ipsum dolor sit amet</p>
+                <a href="galeria.html" id="jbutton" class="btn btn-lg btn-outline-info">
+                    Zobacz miejsca w które możesz z nami pojechać
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</header>
+<div class="container">
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="index.html">Strona główna</a>
+        <div id="1breadcrumb" class="breadcrumb-item active">Formularz zamówienia</div>
+    </nav>
+    <main>
+        <form action="#" method="post">
+            <h2 class="pb-3 text-primary">Dane osobowe: </h2>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="imie">Imię</label>
+                    <input value="Jan" type="text" title="Imię zaczyna się z wielkiej litery po której następuje sekwencja małych liter" class="form-control" id="imie" required placeholder="Jan" pattern="[A-ZĄŚŹŻŁĆÓ]{1}[a-ząśżźłćó]{1,19}">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="nazwisko">Nazwisko</label>
+                    <input value="Kowalski" type="text" title="Nazwisko zaczyna się z wielkiej litery po której następuje sekwencja małych liter, nazwiska dwuczłonowe oddziela się znakiem -" class="form-control" id="nazwisko" required placeholder="Kowalski" pattern="([A-ZĄŚŹŻŁĆÓ]{1}[a-ząśżźłćó]{1,19})(-?[A-ZĄŚŹŻŁĆÓ]{1}[a-ząśżźłćó]{1,19})?">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input value="aaaa@aaaa" type="text" class="form-control" id="email" title="Proszę wprowdzić adres email z uwzględnieniem znaku @" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" required placeholder="adres E-mail">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="tel">Telefon</label>
+                    <input value="111111111" type="text" title="Proszę wprowdzić adres email z uwzględnieniem znaku @" required title="Numer telefonu składa się z 9 następujących po sobie cyfr" class="form-control" id="tel" placeholder="Nr telefonu" pattern="[0-9]{9}">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="miasto">Miasto</label>
+                    <input value="Lublin" type="text" title="Miasto zaczyna się z wielkiej litery po której następuje sekwencja małych liter" class="form-control" id="miasto" required placeholder="Miasto" pattern="[A-ZĄŚŹŻŁĆÓ]{1}[a-ząśżźłćó]+">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="adres">Adres</label>
+                    <input value="Mełgiewska 7/9" type="text" title="Adres składa się z nazwy ulicy zaczynającej się z wilkiej litery po której następuje sekwencja małych liter. Następnie należy wprowadzić numer budyku oraz lokalu po znaku /" class="form-control" id="adres" required placeholder="Adres" pattern="([A-ZĄŚŹŻŁĆÓa-ząśżźłćó]{1,30})(\s\d+\/*\d*)+">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="kod_pocztowy">Kod pocztowy</label>
+                    <input value="22-222" type="text" title="Kod pocztowy słada się z dwóch cyfr po których następuje znak - a następnie kolejne 3 cyfry" class="form-control" id="kod_pocztowy" required placeholder="xx-xxx" pattern="\d{2}-\d{3}">
+                </div>
+            </div>
+            <h2 class="pb-2 text-primary">Informacje o podróży: </h2>
+            <label for="oferta">Wybierz interesującą cię wycieczkę</label>
+            <select id="oferta" class="form-control" size="12" required >
+                <option selected>Wrocław</option>
+                <option>Zakopane</option>
+                <option>Kraków </option>
+                <option>Gdańsk </option>
+                <option>Wenecja </option>
+                <option>Reykjavik </option>
+                <option>Paryż </option>
+                <option>Nicea </option>
+                <option>Władywostok </option>
+                <option>Kotte </option>
+                <option>Pekin </option>
+                <option>Bali </option>
+            </select>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="wyjazd">Data wyjazdu</label>
+                    <input value="2020-05-11" type="date" class="form-control" id="wyjazd" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="powrot">Data powrotu</label>
+                    <input value="2020-05-13" type="date" class="form-control" id="powrot" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="podrozujący">Podróżujący</label>
+                    <input type="number" class="form-control" id="podrozujący" value="1" min="1" max="10">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="pokoje">Pokoje</label>
+                    <input type="number" class="form-control" id="pokoje" value="1" min="1" max="10">
+                </div>
+            </div>
+            <label>Liczba dzieci: </label>
+            <div class="form-row m-0">
+                <div class="form-check form-check-inline">
+                    <input checked class="form-check-input" type="radio" required  name="dzieci" id="inlineCheckbox1" value="0">
+                    <label class="form-check-label" for="inlineCheckbox1">0</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="dzieci" id="inlineCheckbox2" value="1">
+                    <label class="form-check-label" for="inlineCheckbox2">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="dzieci" id="inlineCheckbox3" value="2">
+                    <label class="form-check-label" for="inlineCheckbox3">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="dzieci" id="inlineCheckbox4" value="3 i więcej">
+                    <label class="form-check-label" for="inlineCheckbox4">3 i więcej</label>
+                </div>
+
+            </div>
+            <label class="mt-2">Opcje dodatkowe: </label>
+            <div class="form-row">
+                <div class="form-check form-group col-md-4">
+                    <input class="form-check-input opcje" type="checkbox" name="opcje" value="All inclusive" id="allInc">
+                    <label class="form-check-label ml-3" for="allInc">
+                        All inclusive
+                    </label>
+                </div>
+                <div class="form-check form-group col-md-4">
+                    <input class="form-check-input opcje" type="checkbox" name="opcje" value="Samochód" id="samochod">
+                    <label class="form-check-label ml-3" for="samochod">
+                        Wypożyczony samochód
+                    </label>
+                </div>
+                <div class="form-check form-group col-md-4" >
+                    <input class="form-check-input opcje mr-5" type="checkbox" name="opcje" value="Pakiet wycieczek" id="wycieczki">
+                    <label class="form-check-label ml-3" for="wycieczki">
+                        Dodatkowy pakiet wycieczek
+                    </label>
+                </div>
+            </div>
+            <h2 class="pb-2 text-primary">Oświadczenia: </h2>
+                <div class="form-check">
+                    <input checked class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                    <label class="form-check-label" for="defaultCheck1">
+                        *Oświadczam że zapoznałem się z regulaminem wycieczki
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input checked class="form-check-input" type="checkbox" value="" id="defaultCheck2" required>
+                    <label class="form-check-label" for="defaultCheck2">
+                        *Wyrażam zgodę na przetwarzanie moich danych osobiwych
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck3">
+                        Chce otrzymywać wiadomości z najnowszymi ofertami promocyjnymi
+                    </label>
+                </div>
+            <div class="input-group">
+            <button id="rezerwuj" type="submit" class="btn btn-primary">Rezerwuj</button>
+            <button id="pokaz" type="button" class="btn btn-info" data-toggle="collapse" data-target="#lista"
+                    aria-expanded="true" aria-controls="lista">Pokaz moje wycieczki</button>
+            <button id='wyczysc' type="button" class='btn btn-danger'> Wyczyść listę </button>
+            </div>
+
+        </form>
+
+        <div id="lista" class="collapse hide">
+
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="exampleModalLabel">Zmień dane</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark">
+                        <form action="#" method="post">
+                            <h2 class="pb-3 text-danger">Dane osobowe: </h2>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="editimie">Imię</label>
+                                    <input value="Alicja" type="text" title="Imię zaczyna się z wielkiej litery po której następuje sekwencja małych liter" class="form-control" id="editimie" required placeholder="Jan" pattern="[A-ZĄŚŹŻŁĆÓ]{1}[a-ząśżźłćó]{1,19}">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="editnazwisko">Nazwisko</label>
+                                    <input value="Pasztelan" type="text" title="Nazwisko zaczyna się z wielkiej litery po której następuje sekwencja małych liter, nazwiska dwuczłonowe oddziela się znakiem -" class="form-control" id="editnazwisko" required placeholder="Kowalski" pattern="([A-ZĄŚŹŻŁĆÓ]{1}[a-ząśżźłćó]{1,19})(-?[A-ZĄŚŹŻŁĆÓ]{1}[a-ząśżźłćó]{1,19})?">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="editemail">E-mail</label>
+                                    <input value="aaaa@aaaa" type="text" title="Proszę wprowdzić adres email z uwzględnieniem znaku @" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" class="form-control" id="editemail" required placeholder="adres E-mail">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="edittel">Telefon</label>
+                                    <input value="111111111" type="text" required title="Numer telefonu składa się z 9 następujących po sobie cyfr" class="form-control" id="edittel" placeholder="Nr telefonu" pattern="[0-9]{9}">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="editmiasto">Miasto</label>
+                                    <input value="Lublin" type="text" title="Miasto zaczyna się z wielkiej litery po której następuje sekwencja małych liter" class="form-control" id="editmiasto" required placeholder="Miasto" pattern="[A-ZĄŚŹŻŁĆÓ]{1}[a-ząśżźłćó]+">
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label for="editadres">Adres</label>
+                                    <input value="Mełgiewska 7/9" type="text" title="Adres składa się z nazwy ulicy zaczynającej się z wilkiej litery po której następuje sekwencja małych liter. Następnie należy wprowadzić numer budyku oraz lokalu po znaku /" class="form-control" id="editadres" required placeholder="Adres" pattern="([A-ZĄŚŹŻŁĆÓa-ząśżźłćó]{1,30})(\s\d+\/*\d*)+">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="editkod_pocztowy">Kod pocztowy</label>
+                                    <input value="22-222" type="text" title="Kod pocztowy słada się z dwóch cyfr po których następuje znak - a następnie kolejne 3 cyfry" class="form-control" id="editkod_pocztowy" required placeholder="xx-xxx" pattern="\d{2}-\d{3}">
+                                </div>
+                            </div>
+                            <h2 class="pb-2 text-danger">Informacje o podróży: </h2>
+                            <label for="editoferta">Wybierz interesującą cię wycieczkę</label>
+                            <select id="editoferta" class="form-control" size="12" required >
+                                <option selected>Wrocław</option>
+                                <option>Zakopane</option>
+                                <option>Kraków </option>
+                                <option>Gdańsk </option>
+                                <option>Wenecja </option>
+                                <option>Reykjavik </option>
+                                <option>Paryż </option>
+                                <option>Nicea </option>
+                                <option>Władywostok </option>
+                                <option>Kotte </option>
+                                <option>Pekin </option>
+                                <option>Bali </option>
+                            </select>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="editwyjazd">Data wyjazdu</label>
+                                    <input value="2020-05-11" type="date" class="form-control" id="editwyjazd" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="editpowrot">Data powrotu</label>
+                                    <input value="2020-05-13" type="date" class="form-control" id="editpowrot" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="editpodrozujący">Podróżujący</label>
+                                    <input type="number" class="form-control" id="editpodrozujący" value="1" min="1" max="10">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="editpokoje">Pokoje</label>
+                                    <input type="number" class="form-control" id="editpokoje" value="1" min="1" max="10">
+                                </div>
+                            </div>
+                            <label>Liczba dzieci: </label>
+                            <div class="form-row m-0">
+                                <div class="form-check form-check-inline">
+                                    <input checked class="form-check-input" type="radio" required  name="editdzieci" id="editinlineCheckbox1" value="0">
+                                    <label class="form-check-label" for="editinlineCheckbox1">0</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="editdzieci" id="editinlineCheckbox2" value="1">
+                                    <label class="form-check-label" for="editinlineCheckbox2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="editdzieci" id="editinlineCheckbox3" value="2">
+                                    <label class="form-check-label" for="editinlineCheckbox3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="editdzieci" id="editinlineCheckbox4" value="3 i więcej">
+                                    <label class="form-check-label" for="editinlineCheckbox4">3 i więcej</label>
+                                </div>
+
+                            </div>
+                            <label class="mt-2">Opcje dodatkowe: </label>
+                            <div class="form-row">
+                                <div class="form-check form-group col-md-4">
+                                    <input class="form-check-input opcje" type="checkbox" name="editopcje" value="All inclusive" id="editallInc">
+                                    <label class="form-check-label ml-3" for="editallInc">
+                                        All inclusive
+                                    </label>
+                                </div>
+                                <div class="form-check form-group col-md-4">
+                                    <input class="form-check-input opcje" type="checkbox" name="editopcje" value="Samochód" id="editsamochod">
+                                    <label class="form-check-label ml-3" for="editsamochod">
+                                        Wypożyczony samochód
+                                    </label>
+                                </div>
+                                <div class="form-check form-group col-md-4" >
+                                    <input class="form-check-input opcje mr-5" type="checkbox" name="editopcje" value="Pakiet wycieczek" id="editwycieczki">
+                                    <label class="form-check-label ml-3" for="editwycieczki">
+                                        Dodatkowy pakiet wycieczek
+                                    </label>
+                                </div>
+                            </div>
+                            <button id="zamknij" type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                            <button id="zmien" type="submit" class="btn btn-primary" >Zapisz zmiany</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<footer class="bg-dark py-4 mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h5>QuoVadis</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque cum dicta dolore et magni
+                    maiores minima nemo nisi non, nostrum quod. Autem dolorem laborum magnam, perspiciatis placeat quam
+                    unde.</p>
+            </div>
+            <div class="col-md-4">
+                <form action="get">
+                    <h5>Newsletter</h5>
+                    <div class="input-group">
+                        <input type="email" title="Proszę wprowdzić adres email z uwzględnieniem znaku @" class="form-control" placeholder="adres e-mail">
+                        <a class="btn btn-primary">
+                            Zapisz się
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="stopka py-2">
+    <p class="text-center m-0">&copy;CP</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/przyciski.js"></script>
+<script src="js/storage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

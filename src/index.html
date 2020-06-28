@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="scss/style.css">
+
+    <title>Biuro podróży QuoVadis</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                QuoVadis
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            Strona główna
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria.html" class="nav-link">
+                            Galeria
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kontakt.html" class="nav-link">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="jumbotron-bg"
+                 style="background: url(assets/background.jpg) center center / cover no-repeat;">
+            </div>
+            <div id="ani" style="position: relative">
+                <h1 class="display-4">Witamy w biurze QuoVadis</h1>
+                <p class="lead">Lorem ipsum</p>
+                <p class="lead">Lorem ipsum dolor sit amet</p>
+                <a href="galeria.html" id="jbutton" class="btn btn-lg btn-outline-info">
+                    Zobacz miejsca w które możesz z nami pojechać
+                </a>
+            </div>
+
+        </div>
+    </div>
+</header>
+<div class="container">
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="index.html">Strona główna</a>
+        <div id="1breadcrumb" class="breadcrumb-item active">Podróże w kraju</div>
+    </nav>
+
+    <main class="row">
+        <div class="col-md-3">
+            <h3 class="mb-4">Kategorie</h3>
+            <div class="list-group">
+                <button id="kraj" class="list-group-item active list-group-item-action text-white">
+                    Podróże w kraju
+                </button>
+                <button id="europa" class="list-group-item list-group-item-action text-white">
+                    Podróże w Europie
+                </button>
+                <button id="swiat" class="list-group-item list-group-item-action text-white">
+                    Podróże na inny kontynent
+                </button>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <h3 class="mb-4">Dostępne wycieczki</h3>
+            <ul class="pagination">
+                <li id="previous" class="page-item">
+                    <button class="page-link">
+                        Poprzednia
+                    </button>
+                </li>
+                <li id="1" class="page-item active">
+                    <a class="page-link">
+                        1
+                    </a>
+                </li>
+                <li id="2" class="page-item">
+                    <a class="page-link">
+                        2
+                    </a>
+                </li>
+                <li id="3" class="page-item">
+                    <a class="page-link">
+                        3
+                    </a>
+                </li>
+                <li id="next" class="page-item">
+                    <button class="page-link">
+                        Następna
+                    </button>
+                </li>
+            </ul>
+            <div id="brak" style="display: none">
+                <h2>Brak następnych ofert</h2>
+            </div>
+            <div id="oferty" class="accordion" style="position: relative">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img id="wroclaw"
+                                 src="https://images.unsplash.com/photo-1532157345990-d3ab4df99902?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=776&q=80"
+                                 alt="" class="card-img-top" data-toggle="collapse" data-target="#collapseOne"
+                                 aria-expanded="true" aria-controls="collapseOne">
+                            <div class="card-body">
+                                <h4 id="title1" class="card-title mb-0">
+                                    Wrocław
+                                    <span class="badge badge-success">Last minute!</span>
+                                </h4>
+                                <span id="summary1" class="mt-0">7 dni w 3 gwiazdkowym hotelu</span>
+                            </div>
+                            <div id="collapseOne" class="collapse hide" data-parent="#oferty">
+                                <div class="col-md-12" id="offerInfo1">
+                                    <h3 id="bodytitle1"> Wycieczka do Wrocławia! </h3>
+                                    <p id="info1">
+                                        Informacje o wycieczce do Wrocławia Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Aliquid atque cum dicta dolore et magni maiores minima nemo
+                                        nisi non, nostrum quod. Autem dolorem laborum magnam, perspiciatis placeat quam
+                                        unde.
+                                    </p>
+                                    <br>
+                                    <a class="btn btn-primary my-2 w-100" href="form.html">
+                                        Rezerwuj
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="footer1" class="card-footer text-center">
+                                1199 zł/os
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img id="zakopane"
+                                 src="https://images.unsplash.com/photo-1475139977302-d5bd42365d8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80"
+                                 alt="" class="card-img-top" data-toggle="collapse" data-target="#collapseTwo"
+                                 aria-expanded="true" aria-controls="collapseTwo">
+                            <div class="card-body ">
+                                <h4 id="title2" class="card-title">Zakopane</h4>
+                                <span id="summary2">Weekend w górach, w pensjonacie</span>
+                            </div>
+                            <div id="collapseTwo" class="collapse hide" data-parent="#oferty">
+                                <div class="col-md-12" id="offerInfo2">
+                                    <h3 id="bodytitle2"> Wycieczka w góry! </h3>
+                                    <p id="info2">
+                                        Informacje o wycieczce w góry Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Aliquid atque cum dicta dolore et magni maiores minima nemo
+                                        nisi non, nostrum quod. Autem dolorem laborum magnam, perspiciatis placeat quam
+                                        unde.
+                                    </p>
+                                    <br>
+                                    <a class="btn btn-primary my-2 w-100" href="form.html">
+                                        Rezerwuj
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="footer2" class="card-footer text-center">
+                                450 zł/os
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img id="krakow"
+                                 src="https://images.unsplash.com/photo-1563627042004-362887667513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80"
+                                 alt="" class="card-img-top" data-toggle="collapse" data-target="#collapseThree"
+                                 aria-expanded="true" aria-controls="collapseThree">
+                            <div class="card-body">
+                                <h4 id="title3" class="card-title">Kraków</h4>
+                                <span id="summary3">City break w krakowie</span>
+                            </div>
+                            <div id="collapseThree" class="collapse hide" data-parent="#oferty">
+                                <div class="col-md-12" id="offerInfo3">
+                                    <h3 id="bodytitle3"> Wycieczka do Krakowa! </h3>
+                                    <p id="info3">
+                                        Informacje o wycieczce do Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit. Aliquid atque cum dicta dolore et magni maiores minima nemo nisi non,
+                                        nostrum quod. Autem dolorem laborum magnam, perspiciatis placeat quam unde.
+                                    </p>
+                                    <br>
+                                    <a class="btn btn-primary my-2 w-100" href="form.html">
+                                        Rezerwuj
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="footer3" class="card-footer text-center">
+                                800 zł/os
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img id="gadnsk"
+                                 src="https://images.unsplash.com/photo-1505659645613-28348af82dd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                 alt="" class="card-img-top" data-toggle="collapse" data-target="#collapseFour"
+                                 aria-expanded="true" aria-controls="collapseFour">
+                            <div class="card-body">
+                                <h4 id="title4" class="card-title">Gdańsk</h4>
+                                <span id="summary4">Budżetowy wyjazd do Gadńska na 5 dni</span>
+                            </div>
+                            <div id="collapseFour" class="collapse hide" data-parent="#oferty">
+                                <div class="col-md-12" id="offerInfo4">
+                                    <h3 id="bodytitle4"> Wycieczka do Gdańska! </h3>
+                                    <p id="info4">
+                                        Informacje o wycieczce do Gdańska Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Aliquid atque cum dicta dolore et magni maiores minima nemo
+                                        nisi non, nostrum quod. Autem dolorem laborum magnam, perspiciatis placeat quam
+                                        unde.
+                                    </p>
+                                    <br>
+                                    <a class="btn btn-primary my-2 w-100" href="form.html">
+                                        Rezerwuj
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="footer4" class="card-footer text-center">
+                                600 zł/os
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<footer class="bg-dark py-4 mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h5>QuoVadis</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque cum dicta dolore et magni
+                    maiores minima nemo nisi non, nostrum quod. Autem dolorem laborum magnam, perspiciatis placeat quam
+                    unde.</p>
+            </div>
+            <div class="col-md-4">
+                <form action="get">
+                    <h5>Newsletter</h5>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="adres e-mail">
+                        <a class="btn btn-primary">
+                            Zapisz się
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="stopka py-2">
+    <p class="text-center m-0">&copy;CP</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/przyciski.js"></script>
+<script src="js/oferty.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

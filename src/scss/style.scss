@@ -1,0 +1,39 @@
+@import "zmienne";
+@import "bootstrap/scss/bootstrap";
+@import "jumbotron";
+
+
+.card-img-top{
+height: 200px;
+}
+.card{
+  margin-bottom: 10px;
+  min-height: 350px;
+}
+.card-body{
+  min-height: 146px;
+}
+.stopka{
+  background: $gray-900;
+}
+.text-primary{
+  color: #9eff8c !important;
+}
+.opcje{
+  margin-left: 0
+}
+#jbutton{
+  border: none;
+}
+@media (max-width: 765px){
+  .card-img-top{
+    height: 300px;
+
+  }
+}
+
+@media (min-width: 765px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
